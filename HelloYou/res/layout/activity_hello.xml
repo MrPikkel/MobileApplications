@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HelloActivity" >
+
+    <Button
+        android:id="@+id/buttontoclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/veldinput"
+        android:layout_centerVertical="true"
+        android:onClick="selfDestruct"
+        android:text="@string/buttontoclick" />
+
+    <TextView
+        android:id="@+id/hellotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttontoclick"
+        android:layout_alignLeft="@+id/veldinput"
+        android:layout_marginBottom="69dp"
+        android:text="@string/hellotext" />
+
+    <EditText
+        android:id="@+id/veldinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttontoclick"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/input" />
+
+</RelativeLayout>
